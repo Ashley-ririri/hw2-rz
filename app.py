@@ -42,9 +42,7 @@ def main():
     # --- CONFIGURATION (Iterate on this for Step 5 of your assignment) ---
     # Initial Version of System Instruction
     system_instruction = (
-        "You are a professional administrative assistant. "
-        "Please summarize the following meeting notes into a clear, "
-        "structured list of action items, identifying who is responsible for what."
+        "You are an administrative assistant. Summarize the following meeting notes into a list of action items."
     )
     
     # Sample Input (From your Eval Set)

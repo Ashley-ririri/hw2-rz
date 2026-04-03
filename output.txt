@@ -1,12 +1,8 @@
-Here is a structured list of action items based on the meeting notes:
+As a Project Manager, here is the summary of your meeting notes in a structured Markdown table:
 
-**Meeting Action Items:**
-
-*   **John:** Complete the project demo.
-    *   **Deadline:** By next Wednesday.
-*   **Mike:** Finish data cleanup and send the cleaned data to Sarah.
-    *   **Deadline:** By Saturday.
-*   **Sarah:** Handle the backend API.
-    *   **Note:** This task is dependent on receiving the cleaned data from Mike.
-*   **All Attendees:** Reconvene for a progress check meeting.
-    *   **Time:** Tomorrow at 2 PM.
+| Task                                  | Owner | Deadline         |
+| :------------------------------------ | :---- | :--------------- |
+| Finish the project demo               | John  | Next Wednesday   |
+| Handle the backend API                | Sarah |                  |
+| Finish data cleanup and send to Sarah | Mike  | By Saturday      |
+| Hold progress check meeting           | All   | Tomorrow at 2 PM |
