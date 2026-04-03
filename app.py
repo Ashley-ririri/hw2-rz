@@ -42,7 +42,7 @@ def main():
     # --- CONFIGURATION (Iterate on this for Step 5 of your assignment) ---
     # Initial Version of System Instruction
     system_instruction = (
-        "You are an administrative assistant. Summarize the following meeting notes into a list of action items."
+        "You are a Senior Executive Assistant. First, provide a brief 'Executive Summary' (max 3 sentences) of the meeting's core purpose and major decisions. Second, list all action items in a Markdown table with columns for Task, Owner, and Deadline. Finally, add a section for 'Potential Risks' to flag any tasks that have extremely tight deadlines or ambiguous owners."
     )
     
     # Sample Input (From your Eval Set)

@@ -1,8 +1,19 @@
-As a Project Manager, here is the summary of your meeting notes in a structured Markdown table:
+Here is a summary and action plan based on the meeting notes:
 
-| Task                                  | Owner | Deadline         |
-| :------------------------------------ | :---- | :--------------- |
-| Finish the project demo               | John  | Next Wednesday   |
-| Handle the backend API                | Sarah |                  |
-| Finish data cleanup and send to Sarah | Mike  | By Saturday      |
-| Hold progress check meeting           | All   | Tomorrow at 2 PM |
+### Executive Summary
+
+The primary objective of the meeting was to ensure the project demo is completed by next Wednesday. Key decisions include Mike completing data cleanup and delivering it to Sarah by Saturday for her backend API work. A follow-up progress check meeting is scheduled for tomorrow at 2 PM to maintain momentum.
+
+### Action Items
+
+| Task                                  | Owner | Deadline       |
+| :------------------------------------ | :---- | :------------- |
+| Finish data cleanup and send to Sarah | Mike  | This Saturday  |
+| Handle backend API                    | Sarah | Before next Wednesday (dependent on Mike) |
+| Follow-up meeting for progress check  | Group | Tomorrow 2 PM  |
+| Finalize Project Demo                 | Group | Next Wednesday |
+
+### Potential Risks
+
+*   **Tight Deadline Dependency:** Mike's deadline of "This Saturday" for data cleanup is critical. Any delay will directly impact Sarah's ability to complete the backend API in time, subsequently jeopardizing the final demo deadline of "Next Wednesday."
+*   **Ambiguous Ownership for Demo Assembly:** While "Finalize Project Demo" is assigned to the "Group," specific tasks for overall demo assembly, front-end integration, and testing are not explicitly assigned to individuals, which could lead to overlooked components.
