@@ -1,0 +1,69 @@
+# Evaluation Set: Meeting Minutes to Action Items
+
+This evaluation set contains 5 representative test cases to evaluate the performance of the GenAI workflow.
+
+---
+
+### Case 1: Normal Case (Standard Project Sync)
+**Input:**
+"John: We need to finalize the marketing budget by Friday. 
+Sarah: I will draft the budget proposal by Wednesday morning. 
+Mike: I'll review Sarah's draft on Thursday and send it to John. 
+John: Great, let's meet again on Friday at 10 AM to sign off."
+
+**What a good output should do:**
+- Correctly identify 3 distinct tasks.
+- Assign "Draft budget" to Sarah (Wed), "Review draft" to Mike (Thu), and "Sign off" to John/Group (Fri).
+- Recognize the Friday meeting as an event/task.
+
+---
+
+### Case 2: Edge Case (Minimalist/Short Input)
+**Input:**
+"Project Manager: Everyone, just a reminder that the client report is due tonight. No excuses."
+
+**What a good output should do:**
+- Acknowledge there is only one urgent task.
+- Identify "Client report" as the item and "Tonight" as the deadline.
+- Note that the owner is "Everyone" or "Team."
+
+---
+
+### Case 3: Fail/Review Case (Ambiguity & Conflicting Info)
+**Input:**
+"Alice: Let's move the launch to next Monday. No, wait, Bob said he needs two more days, so maybe Wednesday? 
+Bob: Actually, Friday is safer. 
+Alice: Okay, Friday it is. Also, someone needs to call the caterers... maybe Charlie? 
+Charlie: I'm busy, but I'll see if I can find someone to do it."
+
+**What a good output should do:**
+- **Challenge for the model:** It must correctly pick "Friday" as the final launch date, not Monday or Wednesday.
+- It should flag the "Call caterers" task as "Unassigned" or "Pending confirmation" because Charlie didn't strictly agree to do it.
+
+---
+
+### Case 4: Complex Case (Interrupted & Informal)
+**Input:**
+"Kevin: We need to fix the login bug. 
+David: On it. I'll have a fix by noon. 
+Kevin: Wait, David, before that, can you email the logs to Lucy? 
+David: Sure, doing that now. Lucy needs to analyze them by EOD. 
+Lucy: I'll try, but I have 3 other meetings."
+
+**What a good output should do:**
+- Identify a sequence of tasks for David: 1. Email logs (Immediate), 2. Fix login bug (Noon).
+- Identify Lucy's task: Analyze logs (EOD).
+- Capture the "EOD" (End of Day) deadline correctly.
+
+---
+
+### Case 5: "Noise" Case (Off-topic & Low Signal)
+**Input:**
+"Manager: How was everyone's weekend? 
+Staff A: Great, went hiking. 
+Staff B: I stayed home. 
+Manager: Okay, let's get to work. We just need to keep an eye on the server stability this week. No specific tasks for now, just stay alert."
+
+**What a good output should do:**
+- Recognize that there are **no specific action items** or assigned tasks.
+- A good summary should simply state "Monitor server stability" as a general note rather than hallucinating a task list.
