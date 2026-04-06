@@ -54,7 +54,7 @@ python app.py
 
 ## 5. Video Demo
 
-Watch the project demonstration here:
+Watch the project demonstration here: https://youtu.be/P25cwz1FUKY
 Click to View Demo Video
 
 ## 6. Example Output Format
